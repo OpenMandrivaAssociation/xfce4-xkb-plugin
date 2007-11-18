@@ -6,8 +6,8 @@ License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
 Source0:	http://goodies.xfce.org/releases/xfce4-xkb-plugin/%{name}-%{version}.tar.bz2
-Requires:	xfce-panel >= 4.4
-BuildRequires:	xfce-panel-devel >= 4.4
+Requires:	xfce4-panel >= 4.4.2
+BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libgdk_pixbuf2.0-devel
 BuildRequires:	perl(XML::Parser)
 Obsoletes:	xfce-xkb-plugin
