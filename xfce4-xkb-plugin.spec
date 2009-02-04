@@ -1,6 +1,6 @@
 Summary:	A plugin for the Xfce4 panel displaying keyboard layout
 Name:		xfce4-xkb-plugin
-Version:	0.5.3.1
+Version:	0.5.3.2
 Release:	%mkrel 1
 License:	BSD
 Group:		Graphical desktop/Xfce
