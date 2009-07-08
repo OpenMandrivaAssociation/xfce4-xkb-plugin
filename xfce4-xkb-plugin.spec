@@ -1,15 +1,16 @@
 Summary:	A plugin for the Xfce4 panel displaying keyboard layout
 Name:		xfce4-xkb-plugin
 Version:	0.5.3.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
 Source0:	http://goodies.xfce.org/releases/xfce4-xkb-plugin/%{name}-%{version}.tar.bz2
+Patch:		xfce4-xkb-plugin-0.5.3.3-libxklavier4.0.patch
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
-BuildRequires:	perl(XML::Parser)
-BuildRequires:	libxklavier-devel
+BuildRequires:	intltool
+BuildRequires:	libxklavier-devel >= 4.0
 BuildRequires:	librsvg2-devel
 BuildRequires:	libwnck-devel
 Obsoletes:	xfce-xkb-plugin
@@ -24,6 +25,8 @@ xetskbmap tool.
  
 %prep
 %setup -q
+%patch -p1 -b .libxklavier4.0
+autoconf
 
 %build
 %configure2_5x
