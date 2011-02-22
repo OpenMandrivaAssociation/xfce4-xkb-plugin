@@ -13,6 +13,7 @@ BuildRequires:	intltool
 BuildRequires:	libxklavier-devel >= 5.0
 BuildRequires:	librsvg2-devel
 BuildRequires:	libwnck-devel
+BuildRequires:	libxfcegui4-devel
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-xkb-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
