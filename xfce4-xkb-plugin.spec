@@ -1,19 +1,20 @@
+%define url_ver %(echo %{version} | cut -c 1-3)
+
 Summary:	A plugin for the Xfce4 panel displaying keyboard layout
 Name:		xfce4-xkb-plugin
-Version:	0.5.3.3
-Release:	%mkrel 5
+Version:	0.5.4.0
+Release:	%mkrel 1
 License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
-Source0:	http://goodies.xfce.org/releases/xfce4-xkb-plugin/%{name}-%{version}.tar.bz2
-Patch0:		xfce4-xkb-plugin-0.5.3.3-libxklavier5.0.patch
-Patch1:		xfce4-xkb-plugin-0.5.3.3-fix-crashes.patch
+Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	intltool
 BuildRequires:	libxklavier-devel >= 5.0
 BuildRequires:	librsvg2-devel
 BuildRequires:	libwnck-devel
-BuildRequires:	libxfcegui4-devel
+BuildRequires:	libxfce4util-devel
+BuildRequires:	libxfce4ui-devel
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-xkb-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -27,9 +28,6 @@ xetskbmap tool.
 
 %prep
 %setup -q
-%patch0 -p1 -b .libxklavier5.0
-%patch1 -p1
-autoconf
 
 %build
 %configure2_5x
@@ -37,7 +35,7 @@ autoconf
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std 
+%makeinstall_std
 
 # remove unneeded devel files
 rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/*.a
