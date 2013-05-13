@@ -10,11 +10,11 @@ URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	intltool
-BuildRequires:	libxklavier-devel >= 5.0
-BuildRequires:	librsvg2-devel
+BuildRequires:	pkgconfig(libxklavier) >= 5.0
+BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	libwnck-devel
-BuildRequires:	libxfce4util-devel
-BuildRequires:	libxfce4ui-devel
+BuildRequires:	pkgconfig(libxfce4util-1.0)
+BuildRequires:	pkgconfig(libxfce4ui-1)
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-xkb-plugin
 
