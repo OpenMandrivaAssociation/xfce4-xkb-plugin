@@ -1,2 +1,4 @@
+removed_sources:
+  xfce4-xkb-plugin-0.5.6.tar.bz2: 35e3fcacce95854b29c2a1e6455cf914da39f9a7
 sources:
-  "xfce4-xkb-plugin-0.5.6.tar.bz2": 35e3fcacce95854b29c2a1e6455cf914da39f9a7
+  xfce4-xkb-plugin-0.7.0.tar.bz2: 39e019e9b92ef4483987695ba9a2291e3acbb46a
