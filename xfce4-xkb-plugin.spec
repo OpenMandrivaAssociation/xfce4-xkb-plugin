@@ -46,5 +46,4 @@ rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/*.a
 %dir %{_datadir}/xfce4/xkb
 %{_datadir}/xfce4/xkb/*
 %{_datadir}/xfce4/panel-plugins/xkb-plugin.desktop
-%{_libdir}/xfce4/panel-plugins/
 %{_libexecdir}/xfce4/panel-plugins/
