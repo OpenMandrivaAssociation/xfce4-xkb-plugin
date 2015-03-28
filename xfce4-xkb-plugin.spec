@@ -10,6 +10,7 @@ URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
 BuildRequires:	intltool
+BuildRequires:	pkgconfig(garcon-1)
 BuildRequires:	pkgconfig(libxklavier) >= 5.0
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(libwnck-1.0)
