@@ -1,8 +1,10 @@
-%define url_ver %(echo %{version} | cut -c 1-3)
+%define url_ver %(echo %{version} | cut -d. -f1,2)
+%define _disable_rebuild_configure 1
+%define _disable_ld_no_undefined 1
 
 Summary:	A plugin for the Xfce4 panel displaying keyboard layout
 Name:		xfce4-xkb-plugin
-Version:	0.7.1
+Version:	0.8.1
 Release:	1
 License:	BSD
 Group:		Graphical desktop/Xfce
@@ -45,5 +47,5 @@ rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/*.a
 %doc AUTHORS ChangeLog README
 %dir %{_datadir}/xfce4/xkb
 %{_datadir}/xfce4/xkb/*
-%{_datadir}/xfce4/panel-plugins/xkb-plugin.desktop
-%{_libexecdir}/xfce4/panel-plugins/
+%{_datadir}/xfce4/panel/plugins/xkb.desktop
+%{_libdir}/xfce4/panel/plugins/libxkb.so
