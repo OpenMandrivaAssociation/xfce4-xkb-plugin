@@ -5,20 +5,21 @@
 Summary:	A plugin for the Xfce4 panel displaying keyboard layout
 Name:		xfce4-xkb-plugin
 Version:	0.8.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
+
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(garcon-1)
-BuildRequires:	pkgconfig(libxklavier) >= 5.4
+BuildRequires:	pkgconfig(libxklavier)
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(libwnck-3.0)
-BuildRequires:	pkgconfig(libxfce4util-1.0) >= 4.11
+BuildRequires:	pkgconfig(libxfce4util-1.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
-Requires:	xfce4-panel >= 4.4.2
+Requires:	xfce4-panel
 Obsoletes:	xfce-xkb-plugin
 
 %description
@@ -32,11 +33,11 @@ xetskbmap tool.
 %setup -q
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # remove unneeded devel files
 rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/*.a
