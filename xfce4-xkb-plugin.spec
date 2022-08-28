@@ -45,7 +45,7 @@ rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/*.a
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog README
+%doc AUTHORS ChangeLog README*
 %dir %{_datadir}/xfce4/xkb
 %{_datadir}/xfce4/xkb/*
 %{_datadir}/xfce4/panel/plugins/xkb.desktop
