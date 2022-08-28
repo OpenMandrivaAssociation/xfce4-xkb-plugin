@@ -50,5 +50,5 @@ rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/*.a
 %{_datadir}/xfce4/xkb/*
 %{_datadir}/xfce4/panel/plugins/xkb.desktop
 %{_libdir}/xfce4/panel/plugins/libxkb.so
-%{_datadir}/hicolor/*x*/apps/org.xfce.panel.xkb.png
-%{_datadir}/hicolor/scalable/apps/org.xfce.panel.xkb.svg
+%{_datadir}/icons/hicolor/*x*/apps/org.xfce.panel.xkb.png
+%{_datadir}/icons/hicolor/scalable/apps/org.xfce.panel.xkb.svg
