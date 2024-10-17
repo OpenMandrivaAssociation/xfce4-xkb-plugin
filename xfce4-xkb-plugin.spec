@@ -8,7 +8,7 @@ Version:	0.8.3
 Release:	2
 License:	BSD
 Group:		Graphical desktop/Xfce
-URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
+URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
