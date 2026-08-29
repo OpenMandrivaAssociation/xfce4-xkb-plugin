@@ -14,6 +14,7 @@ Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/%{url_ver}/
 BuildRequires:	meson
 BuildRequires:	make
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
+BuildRequires:  pkgconfig(libnotify)
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(garcon-1)
 BuildRequires:	pkgconfig(libxklavier)
